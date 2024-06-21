@@ -46,7 +46,7 @@ import numpy as np
 
 # Load the saved best models
 n_ss_splits = 20
-best_models = [joblib.load(f"best_model_svr_{i}.joblib") for i in range(n_ss_splits)]
+best_models = [joblib.load(f"models/best_model_svr_{i}.joblib") for i in range(n_ss_splits)]
 
 # Function to make predictions using each best model
 def make_predictions(input_features):
